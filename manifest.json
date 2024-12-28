@@ -1,0 +1,16 @@
+{
+  "name": "MY TODO LIST APP",
+  "short_name": "TODO APP",
+  "start_url": "todo_app.html",
+  "display": "fullscreen",
+  "background_color": "#FFF8DB",
+  "theme": "#FFF8D8",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "250x250",
+      "type": "image/png"
+    }
+  ]
+}
+

@@ -1,0 +1,250 @@
+body{
+      display: flex;
+      flex-direction: column;
+      background: #FFF8DB;
+      overflow: hidden;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif
+  }
+    
+    h2{
+      color: #5867A0;
+      font-size: 2rem;
+      margin: .7rem;
+      margin-left: 1rem;
+    }
+    .todos{
+      background: #304463;
+      padding: 5px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 450px;
+      overflow: scroll;
+      margin-left: .7rem;
+      margin-right: .7rem;
+    }
+    .todo{
+      background: #7D8ABC;
+     width: 90%;
+     padding: 10px;
+     color: white;
+     margin: 10px;
+    }
+    
+
+    
+    .title{
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    li{
+      margin-top: 10px;
+      width: 80%;
+      font-weight: normal;
+      
+    }
+    
+    
+    .done{
+      margin: 0;
+      padding: 0;
+      float: right;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      border: 1px solid white;
+      font-size: .8rem;
+      transform: translateX(30px);
+    }
+    
+    .nothing{
+      width: 90%;
+      color: white;
+      text-align: center;
+      margin: 0;
+      margin-top: 20%;
+    }
+    
+    .sticker{
+      font-size: 7rem;
+      margin: 1rem;
+    }
+    
+    .actions{
+      width: 95%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+      align-self: center
+    }
+    
+    button{
+      display: inline-block;
+      margin: 0;
+      width: 30%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-size: 1rem
+    }
+    
+    button:active,list_actions button:active{
+      background: #B4AE92;
+    }
+    
+    .create{
+      background: #58A062
+    }
+    
+    .edit{
+      background: #6A6260
+    }
+    
+    .delete{
+      background: #FF775A
+    }
+    
+    .create_bar{
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+     overflow-y: scroll;
+     opacity: 0;
+     z-index: -10;
+     animation:null .5s 0s forwards;
+    }
+    
+    .create_bar h2{
+      align-self: center;
+      font-size: 2.2rem
+    }
+    
+    .create_bar * {
+     margin-left: 1rem;
+     width: 80%;
+    }
+    
+    .create_bar span{
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 200px;
+    }
+    
+   
+    
+    .create_bar * button{
+      width: auto;
+      font-size: .8rem;
+      display: inline-block;
+    }
+    
+    .create_bar .edit{
+      width: 80px;
+      position: relative;
+      right: -200px;
+      top: -35px;
+    }
+    
+    label{
+      font-weight: bold;
+    }
+    
+    
+    select{
+      font-size: 1rem;
+      padding: 5px;
+    }
+    
+    .list_actions{
+      width: 90%;
+      display: flex;
+      align-items: space-around;
+      align-self: center;
+      margin-left: -5px;
+    }
+    
+  .list_actions  button{
+    width: 30%;
+    background: red;
+  }
+   
+   .create_bar li{
+     font-weight: bold;
+     width: 250px;
+     height: auto;
+   }
+  
+     hr{
+      align-self: center;
+      transform: translateX(20px);
+      width: 300px;
+      position: 
+    }
+    
+    .save{
+      width: 300px;
+      background: #8FC85E;
+      display: block;
+      padding: 10px;
+      height: auto;
+      align-self: center;
+      margin-left: 0px;
+    }
+    
+    @keyframes open{
+      from{
+        opacity: 0;
+        z-index: -10;
+      }to{
+        opacity: 1;
+        z-index: 10;
+      }
+    }
+    
+    @keyframes close{
+      from{
+        opacity: 1;
+        z-index: 10;
+      }to{
+        opacity: 0;
+        z-index: -10;
+      }
+    }
+    
+   
+    
+    .todo  *:not([type='checkbox']){
+      pointer-events: none;
+    }
+   
+    [type='checkbox'] {
+      pointer-events: initial;
+    }
+    
+    [type='search']{
+      width: 80%;
+      padding: .6rem;
+      border-radius: 10px;
+      border: none;
+      background: #E2B67D;
+      font-size: 1.2rem;
+      align-self: center;
+      margin-bottom: 1rem
+    }
+    
+    [type='search']:focus{
+      outline: none
+    }
+    
+    
+    
+    
