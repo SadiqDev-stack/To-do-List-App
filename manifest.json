@@ -1,7 +1,7 @@
 {
   "name": "MY TODO LIST APP",
   "short_name": "TODO APP",
-  "start_url": "todo_app.html",
+  "start_url": "index.html",
   "display": "fullscreen",
   "background_color": "#FFF8DB",
   "theme": "#FFF8D8",
